@@ -1,0 +1,281 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box !important;
+}   
+select{
+    margin-top: 5px;
+    width: 75%;
+    height: 65%;
+}
+html{
+    overflow: auto;
+    display: contents;
+}
+h1{
+    padding-left: 25px;
+    font-weight: 100;
+}
+label{
+    font-size: 0.70rem;
+    font-weight: bold;
+    margin: 5px 0px 0px;
+}
+label::after{
+    content: "*";
+    color: red;
+}
+footer{
+    padding-top: 50px;
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    text-align: center;
+}
+
+.nav{
+    margin-top: 10px;
+    background-color: #E5E8E8;
+    height:35px;
+    border-radius: 5px;
+    border: 1px solid  #CCD1D1;
+    position: sticky;
+    top : 12%; 
+}
+.nav ul {
+    margin: 10px 5px; 
+    border: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    vertical-align: baseline;
+}
+.nav li{
+    display: inline;
+    list-style: none;
+}
+input[type = number]{
+    width: 70%;
+    padding: 2.5px;
+    margin-top: 5px;
+    border-top: 1px solid #8a8b8f;
+}
+input[type = text]{
+    border: none;
+}
+.tituloPrincipal{
+    height: 12%;
+    width: 100%;
+    padding: 15px 20px;
+    background-color: #000;
+    position: sticky;
+    top: 0;
+}
+.identificador{
+    display: inline-flex;
+    padding: 1px;
+    vertical-align: bottom;
+    background-color: #C1CDF3;  
+    border-top: 1.5px solid #8a8b8f;
+    border-left: 1.5px solid #8a8b8f;
+    border-bottom: 1.5px solid #8a8b8f;
+}
+.titulo{
+    width: 100%;
+    background-color: #cdcfcff3;
+    border-radius: 5px 5px 0px 0px;
+    padding: 5px 20px;
+    text-align: left;
+}
+.a > .flex{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 45%;
+}
+.bloque.e > .flex{
+    flex-flow: column nowrap;
+}
+.c > .flex{
+    display: flex;
+    flex-flow: row;
+    padding: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.a > .flex > input{
+    width: 10%;
+    height: 10%;
+}
+
+.flex > .elemento{
+    width: 40%;
+    height: 15%;
+    padding: 5px;
+}
+
+.principal{
+    max-width: 90%;
+    max-height: 1000%;
+    margin: 25px auto;
+    border: 1px solid #8a8b8f;
+    border-radius: 5px;
+}
+.bloque{
+    max-width: 100%;
+    min-height: 20px;
+    border:1px solid #8a8b8f;
+    margin: 3px;
+    border-radius: 5px;
+}
+.imagen{
+    height: 50%;
+    width: 50%;
+    margin: 1px auto;
+    text-align: center;
+}
+hr{
+    opacity: 0.5;
+    width: 95%;
+    margin: 0 auto;
+}
+.elemento{
+    width: 23%;
+    height: 20%;
+    margin: 2px;
+    padding: 15px 5px 0px;
+}
+
+.grid{
+    margin: 5px auto;
+    max-width:98%;
+    max-height: 1000%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+img{
+    height: 100%;
+    width: 65%;
+}
+
+.a{
+    grid-column: 1 ;
+    grid-row: 1 ;
+}
+.b{
+    grid-column: 2/ span 2;
+    grid-row: 1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+.c{
+    grid-row: 2;
+    grid-column: 1;
+    max-height: 100%;
+}
+.d{
+    grid-row: 2;
+    grid-column: 2;
+    max-height: 100%;
+    max-width: 100%;
+    text-align: center;
+}
+.e{
+    grid-row: 2/span 3;
+    grid-column: 3 ;
+    max-height: 1000%;
+    max-width: 1000%;
+}
+.col1{
+    grid-column: 1;
+}
+.col2{
+    grid-column:2;
+
+}
+.col3{
+    grid-column: 3;
+}
+
+.row1{
+    grid-row: 1;
+}
+.row2{
+    grid-row: 2;
+}
+.row3{
+    grid-row: 3;
+    grid-column: 1;
+}
+@media (max-width: 1020px){
+    .d{
+        grid-row:3;
+        grid-column: 1;
+    }
+    .e{
+        grid-column:2 /span 2;
+        grid-row: 2 ;
+    }
+}
+
+@media (max-width: 700px) {
+    .a, .c, .d {
+        max-width: 100%;
+        grid-column:1;
+        margin: 5px;
+        font-size: 0.8rem;
+    }
+    .elemento{
+        min-width: 0;
+        width: 100%;
+    }
+    .bloque.e > .grid{
+        display: flex;
+        flex-flow: column;
+        padding: 5px 15px ;
+    }
+    select {
+        width: 50% !important;
+    }
+    input[type = number] {
+        width: 60%;
+    }
+    .flex{
+        flex-flow: column;
+    }
+   .grid{
+        display: contents;
+    }
+    .b{
+        grid-column: 1;
+        grid-row: 2 ;
+    }
+    .e > .flex{
+        padding: 10px 15px;
+    }
+    .c, .d {
+        grid-row: auto;
+    }
+    .nav li a{
+        font-size: 0.8rem;
+    }
+    
+    .imagen{
+        width: 50% !important;
+    }
+    .tituloPrincipal  a img{
+        width: 30% !important;
+        min-height: 100% !important;
+    }
+    .tituloPrincipal{
+        text-align:center;
+        margin: 0px auto;
+    }
+    
+}
