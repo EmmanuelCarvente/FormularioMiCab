@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box !important;
 }   
+.tituloPrincipal a > img {
+    margin-top: 10px;
+    max-height: 75%;
+    min-width: 10px;
+    max-width: 120px;
+}
 select{
     margin-top: 5px;
     width: 75%;
@@ -65,9 +71,9 @@ input[type = text]{
     border: none;
 }
 .tituloPrincipal{
-    height: 12%;
+    height: 100px;
     width: 100%;
-    padding: 15px 20px;
+    padding: 15px 100px;
     background-color: #000;
     position: sticky;
     top: 0;
@@ -269,10 +275,7 @@ img{
     .imagen{
         width: 50% !important;
     }
-    .tituloPrincipal  a img{
-        width: 30% !important;
-        min-height: 100% !important;
-    }
+
     .tituloPrincipal{
         text-align:center;
         margin: 0px auto;
