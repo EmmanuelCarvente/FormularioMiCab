@@ -4,10 +4,9 @@
     box-sizing: border-box !important;
 }   
 .tituloPrincipal a > img {
-    margin-top: 10px;
-    max-height: 75%;
+    max-height: 100%;
     min-width: 10px;
-    max-width: 120px;
+    max-width: 130px;
 }
 select{
     margin-top: 5px;
@@ -46,7 +45,7 @@ footer{
     border-radius: 5px;
     border: 1px solid  #CCD1D1;
     position: sticky;
-    top : 12%; 
+    top : 80px; 
 }
 .nav ul {
     margin: 10px 5px; 
@@ -64,6 +63,7 @@ a{
 input[type = number]{
     width: 70%;
     padding: 2.5px;
+    margin-bottom: 10px;
     margin-top: 5px;
     border-top: 1px solid #8a8b8f;
 }
@@ -71,7 +71,7 @@ input[type = text]{
     border: none;
 }
 .tituloPrincipal{
-    height: 100px;
+    height: 80px;
     width: 100%;
     padding: 15px 100px;
     background-color: #000;
@@ -86,6 +86,7 @@ input[type = text]{
     border-top: 1.5px solid #8a8b8f;
     border-left: 1.5px solid #8a8b8f;
     border-bottom: 1.5px solid #8a8b8f;
+    margin-bottom: 10px;
 }
 .titulo{
     width: 100%;
@@ -139,7 +140,7 @@ input[type = text]{
 }
 .imagen{
     height: 50%;
-    width: 50%;
+    max-width: 40%;
     margin: 1px auto;
     text-align: center;
 }
@@ -273,7 +274,8 @@ img{
     }
     
     .imagen{
-        width: 50% !important;
+        max-width: 250px !important;
+        max-height: 240px;
     }
 
     .tituloPrincipal{
