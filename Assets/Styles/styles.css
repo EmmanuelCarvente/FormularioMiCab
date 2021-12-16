@@ -140,7 +140,8 @@ input[type = text]{
 }
 .imagen{
     height: 50%;
-    max-width: 40%;
+    min-width: 30%;
+    max-width: 250px;
     margin: 1px auto;
     text-align: center;
 }
@@ -233,6 +234,7 @@ img{
 
 @media (max-width: 700px) {
     .a, .c, .d {
+        max-height: 65%;
         max-width: 100%;
         grid-column:1;
         margin: 5px;
@@ -274,8 +276,8 @@ img{
     }
     
     .imagen{
-        max-width: 250px !important;
-        max-height: 240px;
+        max-width: 280px !important;
+        max-height: 200px;
     }
 
     .tituloPrincipal{
