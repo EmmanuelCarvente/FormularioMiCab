@@ -60,7 +60,7 @@
                         <label for="no-show-on-demand-type" class="asterisco">No Show On Demand Type</label> <br> 
                         <select name="no-show-on-demand-type" id="no-show-on-demand-type">
                             <option value="money">Money</option>
-                            <option value="credit">Credit</option>
+                            <option value="percent">Percent</option>
                         </select>
                     </div>
                     <div class="elemento">
@@ -95,7 +95,7 @@
                         <label for="no-show-booking-type">No Show Booking Type</label> <br>
                         <select name="no-show-booking-type" id="no-show-booking-type">
                         <option value="money">money</option>
-                        <option value="credit">credit</option>
+                        <option value="percent">Percent</option>
                         </select>
                     </div>
                     <div class="elemento">
@@ -108,7 +108,7 @@
                     </div>
                 </div>
                 <div class="bloque c"> 
-                    <div class="titulo">Starting</div>
+                    <div class="titulo">Starting   <input type="checkbox" id="starting"></div>
                         <div class="flex">
                             <div class="elemento">
                                 <label for="starting-now">Starting(now)</label> <br>
@@ -121,12 +121,12 @@
                         </div>
                 </div>
                 <div class="bloque d">
-                    <div class="titulo">Per Minute</div>
-                        <label for="cost-per-minute" class="asterisco">Cost Per Minute</label> <br>
-                        <span class="identificador">$</span><input type="number" name="cost-per-minute" id="cost-per-minute">
+                    <div class="titulo">Per Minute <input type="checkbox" name="per-minute" id="per-minute"> </div>
+                        <label for="cost-per-minute">Cost Per Minute</label> <br>
+                        <span class="identificador">$</span><input type="number" name="cost-per-minute" id="cost-per-minute" min="0" step="0.1">
                 </div>
                 <div class="bloque e"> 
-                    <div class="titulo">Distance</div>
+                    <div class="titulo">Distance <input type="checkbox" name="distance" id="distance"> </div>
                     <div class="grid">
                         <div class="km col1 row1">
                         <label for="first-distance-from">First Distance From</label> <br>
