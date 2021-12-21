@@ -20,144 +20,147 @@
       </div>
     <div class="principal">
         <div class="titulo"> <button> &lt;&lt; Back</button></div>
-        <div class="grid">
-            <div class="bloque a"> 
-                <div class="titulo">Service Type</div>
-                <div class="imagen">
-                    <img src="../images/carro.png"  alt="MiCab">
-                </div>
-                <div class="flex">
-                    <div class="elemento">
-                        <label for="apply-rates">Apply Rates</label> <br>
-                        <input type="checkbox" id="apply-rates" name="apply-rates"> 
+        <form id="formulario">
+            <div class="grid">
+                <div class="bloque a"> 
+                    <div class="titulo">Service Type</div>
+                    <div class="imagen">
+                        <img src="../images/carro.png"  alt="MiCab">
                     </div>
-                    <div class="elemento">
-                        <label for="comission-type">Comission Type:</label> <br>
-                        <input type="text" id="comission-type" name="comission-type" readonly="true" style="width: 20%;">
-                    </div>
-                    <div class="elemento">
-                        <label for="type-name">Type Name:</label> 
-                        <input type="text" readonly="true" style="width: 20%; height: auto;"> 
-                    </div>
-                    <div class="elemento">
-                        <label for="comission-amount">Comission Amount</label>
-                        <input type="text" name="comission-amount" id="comission-amount" readonly="true" style="width: 20%;">
-                    </div>
-                </div>
-            </div>
-            <div class="bloque b">
-                <div class="titulo">Global Rates</div>
-                <div class="elemento">
-                    <label for="max-amount-agency" class="asterisco">Maximum amount agency</label><br>
-                    <span class="identificador">$</span><input type="number" id="max-amount-agency" name="max-amount-agency" min="0" step="0.1">
-                </div>
-                <div class="elemento">
-                    <label for="credit-top" class="asterisco">Credit Top</label> <br>
-                    <span class="identificador">$</span><input type="number" name="credit-top" id="credit-top">
-                </div>
-                <div class="elemento">
-                    <label for="no-show-on-demand-type" class="asterisco">No Show On Demand Type</label> <br> 
-                    <select name="no-show-on-demand-type" id="no-show-on-demand-type">
-                        <option value="money">Money</option>
-                        <option value="credit">Credit</option>
-                    </select>
-                </div>
-                <div class="elemento">
-                    <label for="no-show-on-demand-value" class="asterisco">No Show On Demand Value</label> <br>
-                    <span class="identificador">$</span><input type="number" name="no-show-on-demand-value" id="">
-                </div>
-                <div class="elemento">
-                    <label for="rate-demand" class="asterisco">Rate Demand</label> <br>
-                    <span class="identificador">$</span><input type="number" name="rate-demand" id="rate-demand">
-                </div>
-                <div class="elemento">
-                    <label for="rate-booking" class="asterisco">Rate Booking</label> <br>
-                    <span class="identificador">$</span><input type="number" name="rate-booking" id="rate-booking">
-                </div>
-                <div class="elemento">
-                    <label for="fee-cancellation-demand" class="asterisco">Fee cancellation Demand</label> <br>
-                    <span class="identificador">$</span><input type="number" name="fee-cancellation-demand" id="fee-cancellation-demand">
-                </div>
-                <div class="elemento">
-                    <label for="fee-cancelation-booking" class="asterisco">Fee Cancelation Booking</label> <br>
-                    <span class="identificador">$</span><input type="number" name="fee-cancelation-booking" id="fee-cancelation-booking">
-                </div>
-                <div class="elemento">
-                    <label for="no-show-button-time" class="asterisco">No show button time </label> <br>
-                    <span class="identificador">$</span><input type="number" name="no-show-button-time" id="no-show-button-time">
-                </div>
-                <div class="elemento">
-                    <label for="tolerance-time" class="asterisco">Tolerance Time</label> <br>
-                    <span class="identificador">$</span><input type="number" name="tolerance-time" id="tolerance-time">
-                </div>
-                <div class="elemento">
-                    <label for="no-show-booking-type" class="asterisco">No Show Booking Type</label> <br>
-                    <select name="no-show-booking-type" id="no-show-booking-type">
-                    <option value="money">money</option>
-                    <option value="credit">credit</option>
-                    </select>
-                </div>
-                <div class="elemento">
-                    <label for="no-show-booking-value" class="asterisco">No show booking value</label> <br>
-                    <span class="identificador">$</span><input type="number" name="no-show-booking-value" id="no-show-booking-value">
-                </div>
-                <div class="elemento">
-                    <label for="waypoint-rate" class="asterisco">Waypoint Rate</label> <br>
-                    <span class="identificador">$</span><input type="number" name="waypoint-rate" id="waypoint-rate">
-                </div>
-            </div>
-            <div class="bloque c"> 
-                <div class="titulo">Starting</div>
                     <div class="flex">
                         <div class="elemento">
-                            <label for="starting-now" class="asterisco">Starting(now)</label> <br>
-                            <span class="identificador">$</span><input type="number" name="starting-now" id="starting-now">
+                            <label for="apply-rates">Apply Rates</label> <br>
+                            <input type="checkbox" id="apply-rates" name="apply-rates"> 
                         </div>
                         <div class="elemento">
-                            <label for="starting-reservation" class="asterisco">Starting(reservation)</label> <br>
-                            <span class="identificador">$</span><input type="number" name="starting-reservation" id="starting-reservation">
+                            <label for="comission-type">Comission Type:</label> <br>
+                            <input type="text" id="comission-type" name="comission-type" readonly="true" style="width: 20%;">
+                        </div>
+                        <div class="elemento">
+                            <label for="type-name">Type Name:</label> 
+                            <input type="text" readonly="true" style="width: 20%; height: auto;"> 
+                        </div>
+                        <div class="elemento">
+                            <label for="comission-amount">Comission Amount</label>
+                            <input type="text" name="comission-amount" id="comission-amount" readonly="true" style="width: 20%;">
                         </div>
                     </div>
+                </div>
+                <div class="bloque b">
+                    <div class="titulo">Global Rates</div>
+                    <div class="elemento">
+                        <label for="max-amount-agency" class="asterisco">Maximum amount agency</label><br>
+                        <span class="identificador">$</span><input type="number" id="max-amount-agency" name="max-amount-agency" min="0" step="0.1">
+                    </div>
+                    <div class="elemento">
+                        <label for="credit-top" class="asterisco">Credit Top</label> <br>
+                        <span class="identificador">$</span><input type="number" name="credit-top" id="credit-top" min="0" step="0.1">
+                    </div>
+                    <div class="elemento">
+                        <label for="no-show-on-demand-type" class="asterisco">No Show On Demand Type</label> <br> 
+                        <select name="no-show-on-demand-type" id="no-show-on-demand-type">
+                            <option value="money">Money</option>
+                            <option value="credit">Credit</option>
+                        </select>
+                    </div>
+                    <div class="elemento">
+                        <label for="no-show-on-demand-value" class="asterisco">No Show On Demand Value</label> <br>
+                        <span class="identificador">$</span><input type="number" name="no-show-on-demand-value" id="no-show-on-demand-value" min="0" step="0.1">
+                    </div>
+                    <div class="elemento">
+                        <label for="rate-demand" class="asterisco">Rate Demand</label> <br>
+                        <span class="identificador">$</span><input type="number" name="rate-demand" id="rate-demand" min="0" step="0.1">
+                    </div>
+                    <div class="elemento">
+                        <label for="rate-booking" class="asterisco">Rate Booking</label> <br>
+                        <span class="identificador">$</span><input type="number" name="rate-booking" id="rate-booking" min="0" step="0.1"> 
+                    </div>
+                    <div class="elemento">
+                        <label for="fee-cancellation-demand">Fee cancellation Demand</label> <br>
+                        <span class="identificador">$</span><input type="number" name="fee-cancellation-demand" id="fee-cancellation-demand" min="0" step="0.1">
+                    </div>
+                    <div class="elemento">
+                        <label for="fee-cancelation-booking">Fee Cancelation Booking</label> <br>
+                        <span class="identificador">$</span><input type="number" name="fee-cancelation-booking" id="fee-cancelation-booking" min="0" step="0.1">
+                    </div>
+                    <div class="elemento">
+                        <label for="no-show-button-time">No show button time </label> <br>
+                        <span class="identificador">$</span><input type="number" name="no-show-button-time" id="no-show-button-time" min="0" step="0.1">
+                    </div>
+                    <div class="elemento">
+                        <label for="tolerance-time">Tolerance Time</label> <br>
+                        <span class="identificador">$</span><input type="number" name="tolerance-time" id="tolerance-time" min="0" step="0.1">
+                    </div>
+                    <div class="elemento">
+                        <label for="no-show-booking-type">No Show Booking Type</label> <br>
+                        <select name="no-show-booking-type" id="no-show-booking-type">
+                        <option value="money">money</option>
+                        <option value="credit">credit</option>
+                        </select>
+                    </div>
+                    <div class="elemento">
+                        <label for="no-show-booking-value" >No show booking value</label> <br>
+                        <span class="identificador">$</span><input type="number" name="no-show-booking-value" id="no-show-booking-value" min="0" step="0.1">
+                    </div>
+                    <div class="elemento">
+                        <label for="waypoint-rate">Waypoint Rate</label> <br>
+                        <span class="identificador">$</span><input type="number" name="waypoint-rate" id="waypoint-rate" min="0" step="0.1">
+                    </div>
+                </div>
+                <div class="bloque c"> 
+                    <div class="titulo">Starting</div>
+                        <div class="flex">
+                            <div class="elemento">
+                                <label for="starting-now">Starting(now)</label> <br>
+                                <span class="identificador">$</span><input type="number" name="starting-now" id="starting-now" min="0" step="0.1">
+                            </div>
+                            <div class="elemento">
+                                <label for="starting-reservation">Starting(reservation)</label> <br>
+                                <span class="identificador">$</span><input type="number" name="starting-reservation" id="starting-reservation" min="0" step="0.1"> 
+                            </div>
+                        </div>
+                </div>
+                <div class="bloque d">
+                    <div class="titulo">Per Minute</div>
+                        <label for="cost-per-minute" class="asterisco">Cost Per Minute</label> <br>
+                        <span class="identificador">$</span><input type="number" name="cost-per-minute" id="cost-per-minute">
+                </div>
+                <div class="bloque e"> 
+                    <div class="titulo">Distance</div>
+                    <div class="grid">
+                        <div class="km col1 row1">
+                        <label for="first-distance-from">First Distance From</label> <br>
+                        <input type="number" name="first-distance-from" id="first-distance-from" min="0" step="0.1"><span class="identificador">km</span>
+                        </div>
+                        <div class="km col2 row1">
+                        <label for="first-distance-to" >First Distance To</label> <br>
+                        <input type="number" name="irst-distance-to" id="irst-distance-to" min="0" step="0.1"><span class="identificador">km</span>
+                        </div>
+                        <div class="km col3 row1" >
+                        <label for="first-distance-fee" >First Distance Fee</label> <br>
+                        <input type="number" name="first-distance-fee" id="first-distance-fee" min="0" step="0.1"><span class="identificador">km</span>
+                        </div>
+                        <div class="km col1 row2">
+                        <label for="second-distance-from" >Second Distance From</label> <br>
+                        <input type="number" name="second-distance-from" id="second-distance-from" min="0" step="0.1"><span class="identificador">km</span>
+                        </div>
+                        <div class="km col2 row2">
+                        <label for="second-distance-from">Second Distance From</label> <br>
+                        <input type="number" name="second-distance-from" id="second-distance-from" min="0" step="0.1"><span class="identificador">km</span>
+                        </div>
+                        <div class="col3 row2">
+                        <label for="second-distance-fee" >Second Distance Fee</label> <br>
+                        <span class="identificador">$</span><input type="number" name="second-distance-fee" id="second-distance-fee" min="0" step="0.1">
+                        </div>
+                        <div class="col1 row3">
+                        <label for="after-second-distance-fee">After Second Distance Fee</label> <br>
+                        <span class="identificador">$</span><input type="number" name="after-second-distance-fee" id="after-second-distance-fee" min="0" step="0.1">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="bloque d">
-                <div class="titulo">Per Minute</div>
-                    <label for="cost-per-minute" class="asterisco">Cost Per Minute</label> <br>
-                    <span class="identificador">$</span><input type="number" name="cost-per-minute" id="cost-per-minute">
-            </div>
-            <div class="bloque e"> 
-                <div class="titulo">Distance</div>
-                <div class="grid">
-                    <div class="km col1 row1">
-                      <label for="first-distance-from" class="asterisco">First Distance From</label> <br>
-                      <input type="number" name="first-distance-from" id="first-distance-from"><span class="identificador">km</span>
-                    </div>
-                    <div class="km col2 row1">
-                      <label for="first-distance-to" class="asterisco">First Distance To</label> <br>
-                      <input type="number" name="irst-distance-to" id="irst-distance-to"><span class="identificador">km</span>
-                    </div>
-                    <div class="km col3 row1" >
-                      <label for="first-distance-fee" class="asterisco">First Distance Fee</label> <br>
-                      <input type="number" name="first-distance-fee" id="first-distance-fee"><span class="identificador">km</span>
-                    </div>
-                    <div class="km col1 row2">
-                      <label for="second-distance-from" class="asterisco">Second Distance From</label> <br>
-                      <input type="number" name="second-distance-from" id="second-distance-from"><span class="identificador">km</span>
-                    </div>
-                    <div class="km col2 row2">
-                      <label for="second-distance-from" class="asterisco">Second Distance From</label> <br>
-                      <input type="number" name="second-distance-from" id="second-distance-from"><span class="identificador">km</span>
-                    </div>
-                    <div class="col3 row2">
-                      <label for="second-distance-fee" class="asterisco">Second Distance Fee</label> <br>
-                      <span class="identificador">$</span><input type="number" name="second-distance-fee" id="second-distance-fee">
-                    </div>
-                    <div class="col1 row3">
-                      <label for="after-second-distance-fee" class="asterisco">After Second Distance Fee</label> <br>
-                      <span class="identificador">$</span><input type="number" name="after-second-distance-fee" id="after-second-distance-fee">
-                    </div>
-                  </div>
-            </div>
-        </div>
+            <input type="submit" name="btn-submit" id="btn-submit">
+        </form>
     </div>
     <footer>
          <img src="../images/micab.png" alt="" style="width: 130px; height: 50px;"> 

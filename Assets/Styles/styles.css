@@ -8,6 +8,13 @@
     min-width: 10px;
     max-width: 130px;
 }
+#btn-submit{
+    margin: 0px 35px 10px;
+    background-color: rgb(16, 74, 182);
+    border-radius: 5px;
+    padding: 5px;
+    color:white;
+}
 select{
     margin-top: 5px;
     width: 75%;
@@ -237,6 +244,11 @@ img{
 }
 
 @media (max-width: 768px) {
+    #btn-submit{
+        display: block;
+        width: 25%;
+        margin: 15px auto;
+    }
     .a, .c, .d{
         max-height: 65%;
         max-width: 90%;
