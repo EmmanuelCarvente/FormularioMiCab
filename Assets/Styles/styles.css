@@ -66,6 +66,10 @@ input[type = number]{
     margin-bottom: 10px;
     margin-top: 5px;
     border-top: 1px solid #8a8b8f;
+    border-radius: 0px 10px 10px 0px;
+}
+.bloque.e .km > input[type = number]{
+    border-radius: 10px 0px 0px 10px;
 }
 input[type = text]{
     border: none;
@@ -232,13 +236,15 @@ img{
     }
 }
 
-@media (max-width: 700px) {
-    .a, .c, .d {
+@media (max-width: 768px) {
+    .a, .c, .d{
         max-height: 65%;
-        max-width: 100%;
+        max-width: 90%;
+       
         grid-column:1;
-        margin: 5px;
+        margin: 5px auto;
         font-size: 0.8rem;
+        text-align: center;
     }
     .elemento{
         min-width: 0;
@@ -261,16 +267,16 @@ img{
    .grid{
         display: contents;
     }
-    .b{
-        grid-column: 1;
-        grid-row: 2 ;
+
+    .e , .b{
+        text-align: center;
+        max-width: 90%;
+        margin: 5px auto;
     }
     .e > .flex{
         padding: 10px 15px;
     }
-    .c, .d {
-        grid-row: auto;
-    }
+
     .nav li a{
         font-size: 0.8rem;
     }
@@ -285,4 +291,8 @@ img{
         margin: 0px auto;
     }
     
+}
+
+@media (max-width: 320px){
+
 }
