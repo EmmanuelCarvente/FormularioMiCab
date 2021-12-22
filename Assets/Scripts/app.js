@@ -38,6 +38,7 @@ let startingReservation = document.getElementById("starting-reservation");
         }
         if(perMinute.checked){
             if(costPerMinute.value == '' || costPerMinute.value <= 0){
+                costPerMinute.focus();
                 alert("Llene el campo PerMinute");
             }
         }
@@ -62,21 +63,19 @@ let startingReservation = document.getElementById("starting-reservation");
                 let secondDistanceTo = document.getElementById('second-distance-to');
                 let secondDistanceFee = document.getElementById('second-distance-fee');
 
-
-                console.log(firstDistanceFrom.value);
-                console.log(firstDistanceTo.value);
-                
                 if(firstDistanceFrom.value > firstDistanceTo.value){
-                    console.log("Se ejecuta el primer If");
                     firstDistanceTo.focus();
+                    console.log("Se ejecuta el primer If de la validacion");
                     return alert("First Distance To debe ser Mayor o igual a First Distance From");
                 }
-                else if(secondDistanceFrom.value < firstDistanceTo.value){
+                if(secondDistanceFrom.value < firstDistanceTo.value){
                     secondDistanceFrom.focus();
+                    console.log(firstDistanceTo + "Es mayor a" + secondDistanceFrom);
                     return alert("Second Distance From debe ser mayor o igual a First Distance To")
                 }
-                else if(secondDistanceFrom.value > secondDistanceTo.value){
+                if(secondDistanceFrom.value > secondDistanceTo.value){
                     secondDistanceTo.focus();
+                    console.log(secondDistanceFrom.value + "Es mayor a " + secondDistanceTo.value);
                     return alert("Second Distance To debe ser mayor o igual a Second Distance from")
                 }
         
