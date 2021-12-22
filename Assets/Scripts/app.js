@@ -63,17 +63,17 @@ let startingReservation = document.getElementById("starting-reservation");
                 let secondDistanceTo = document.getElementById('second-distance-to');
                 let secondDistanceFee = document.getElementById('second-distance-fee');
 
-                if(firstDistanceFrom.value > firstDistanceTo.value){
+                if( firstDistanceFrom.value > firstDistanceTo.value){
                     firstDistanceTo.focus();
                     console.log("Se ejecuta el primer If de la validacion");
                     return alert("First Distance To debe ser Mayor o igual a First Distance From");
                 }
-                if(secondDistanceFrom.value < firstDistanceTo.value){
+                else if(secondDistanceFrom.value < firstDistanceTo.value){
                     secondDistanceFrom.focus();
-                    console.log(firstDistanceTo + "Es mayor a" + secondDistanceFrom);
+                    console.log(firstDistanceTo.value + "Es mayor a" + secondDistanceFrom.value);
                     return alert("Second Distance From debe ser mayor o igual a First Distance To")
                 }
-                if(secondDistanceFrom.value > secondDistanceTo.value){
+                else if(secondDistanceFrom.value > secondDistanceTo.value){
                     secondDistanceTo.focus();
                     console.log(secondDistanceFrom.value + "Es mayor a " + secondDistanceTo.value);
                     return alert("Second Distance To debe ser mayor o igual a Second Distance from")
