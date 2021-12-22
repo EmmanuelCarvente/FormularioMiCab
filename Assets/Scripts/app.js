@@ -7,12 +7,7 @@ let costPerMinute = document.getElementById("cost-per-minute");
 let distance = document.getElementById("distance");
 let startingNow = document.getElementById("starting-now");
 let startingReservation = document.getElementById("starting-reservation");
-let firstDistanceTo = document.getElementById('first-distance-to');
-let firstDistanceFrom = document.getElementById('first-distance-from');
-let firstDistanceFee = document.getElementById('first-distance-fee');
-let secondDistanceFrom = document.getElementById('second-distance-from');
-let secondDistanceTo = document.getElementById('second-distance-to');
-let secondDistanceFee = document.getElementById('second-distance-fee');
+
 
 
     formArray.addEventListener('submit', evento => {
@@ -46,41 +41,46 @@ let secondDistanceFee = document.getElementById('second-distance-fee');
                 alert("Llene el campo PerMinute");
             }
         }
-        let condicion =0;
+
         if(distance.checked){
             for(let  i= 23; i< formArray.elements.length -1  ; i++){
                 if(formArray.elements[i].value != '' ){
-                    console.log(formArray.elements[i]);
                     formArray.elements[i].style.backgroundColor = '#FFFFFF'
                     condicion =1;
                 }
                 else{
                     formArray.elements[i].style.backgroundColor = '#A90000DD';
-                    alerta = 1;
                     condicion = 0;
                 }
             }
-            console.log(firstDistanceFee.value);
-            if(condicion == 1){
-                if(firstDistanceFee.value > secondDistanceFee.value){
-                    alert("Second Distance Fee tiene que ser mayor o igual a First Distance Fee");
-                }else{
 
-                }
-                if(firstDistanceFrom.value > secondDistanceFrom.value){
-                    alert("Second Distance From tiene que ser mayor o igual a First Distance From");
-                }else{
 
-                }
-                if(firstDistanceTo.value > secondDistanceTo.value){
-                    alert("Second Distance To tiene que ser mayor o igual a First Distance To");
-                }else{
+                let firstDistanceTo = document.getElementById('first-distance-to');
+                let firstDistanceFrom = document.getElementById('first-distance-from');
+                let firstDistanceFee = document.getElementById('first-distance-fee');
+                let secondDistanceFrom = document.getElementById('second-distance-from');
+                let secondDistanceTo = document.getElementById('second-distance-to');
+                let secondDistanceFee = document.getElementById('second-distance-fee');
 
+
+                console.log(firstDistanceFrom.value);
+                console.log(firstDistanceTo.value);
+                
+                if(firstDistanceFrom.value > firstDistanceTo.value){
+                    console.log("Se ejecuta el primer If");
+                    firstDistanceTo.focus();
+                    return alert("First Distance To debe ser Mayor o igual a First Distance From");
                 }
-        }
-        }
+                else if(secondDistanceFrom.value < firstDistanceTo.value){
+                    secondDistanceFrom.focus();
+                    return alert("Second Distance From debe ser mayor o igual a First Distance To")
+                }
+                else if(secondDistanceFrom.value > secondDistanceTo.value){
+                    secondDistanceTo.focus();
+                    return alert("Second Distance To debe ser mayor o igual a Second Distance from")
+                }
         
-
+    }
         if(alerta == 1){
             alert("Favor de llenar los campos en Rojo");
             alerta = 0;
